@@ -1,1 +1,64 @@
-Hello, world!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrej Tomas | Software Developer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+
+    <div class="header-wrap">
+        <header class="header d-flex">
+            <a href="/" class="logo">Andrej Tomas</a>
+            <nav class="menu-wrap">
+                <ul class="menu">
+                    <li class="menu-item"><a href="#" class="menu-link">About me</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Projects</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Blog</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="intro-wrap d-none">
+        <img src="assets/img/meh.jpg" class="my-pic" alt="Picture of me">
+        <div class="intro-text-wrap">
+            <p>Hi, I'm <b>Andrej Tomas</b>. <br>
+                I'm a <span id="text-change">software developer.</span>
+            </p>
+            <div class="button-wrap">
+                <a href="#" class="button">See my work</a>
+                <a href="#" class="button">Download my CV</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer d-flex">
+        <div class="icon-wrap">
+            <a href="https://github.com/andrewtomas" class="img-link" target="_blank">
+                <img src="assets/img/github.svg" alt="Github" class="icon">
+            </a>
+            <a href="https://www.linkedin.com/in/andrejtomas/" class="img-link" target="_blank">
+                <img src="assets/img/linkedin.svg" alt="LinkedIn" class="icon">
+            </a>
+            <a href="https://www.instagram.com/andrej1tomas" class="img-link" target="_blank">
+                <img src="assets/img/instagram.svg" alt="Instagram" class="icon">
+            </a>
+        </div>
+        <a href="#" class="s-page-link">+</a>
+    </footer>
+
+
+    <canvas id="noise"></canvas>
+    <script src="canvasnoise.js"></script>
+</body>
+
+</html>
