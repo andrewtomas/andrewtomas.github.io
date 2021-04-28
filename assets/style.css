@@ -5,6 +5,7 @@
 
 .d-none {
   display: none;
+  opacity: 0;
 }
 
 .d-flex {
@@ -130,7 +131,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 70%;
+  width: 60%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   display: -webkit-box;
@@ -167,9 +168,18 @@ body {
 
 .intro-wrap .button-wrap .button {
   padding: .7em  1.2em;
-  background-color: #4B4242;
+  background-color: #2f2a2a;
   border-radius: 18px;
   margin-right: 1em;
+  font-weight: bold;
+  -webkit-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
+}
+
+.intro-wrap .button-wrap .button:hover {
+  background-color: #3d3838;
+  -webkit-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
 }
 
 .intro-wrap .button-wrap .button::after {
