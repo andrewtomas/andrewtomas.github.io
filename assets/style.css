@@ -127,13 +127,54 @@ body {
   display: none;
 }
 
-.intro-wrap {
+.content {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 60%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.content .contact-wrap {
+  width: 100%;
+  display: none;
+}
+
+.content .contact-wrap .contact {
+  text-align: center;
+}
+
+.content .contact-wrap .contact p, .content .contact-wrap .contact a {
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 48px;
+}
+
+.content .contact-wrap .contact a {
+  font-style: italic;
+}
+
+.content .contact-wrap .contact a:hover > .img-big {
+  opacity: .05;
+  -webkit-transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
+}
+
+.content .contact-wrap .contact .img-big {
+  opacity: 0;
+  z-index: -1;
+  width: 200px;
+  position: fixed;
+  top: 150%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  -webkit-transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
+}
+
+.content .intro-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,12 +190,12 @@ body {
           align-items: center;
 }
 
-.intro-wrap .my-pic {
+.content .intro-wrap .my-pic {
   width: 300px;
   margin-right: 5em;
 }
 
-.intro-wrap p {
+.content .intro-wrap p {
   color: #FFFFFF;
   font-weight: normal;
   font-size: 42px;
@@ -162,11 +203,11 @@ body {
   margin-bottom: 1em;
 }
 
-.intro-wrap p #text-change {
+.content .intro-wrap p #type-text {
   font-style: italic;
 }
 
-.intro-wrap .button-wrap .button {
+.content .intro-wrap .button-wrap .button {
   padding: .7em  1.2em;
   background-color: #2f2a2a;
   border-radius: 18px;
@@ -176,13 +217,13 @@ body {
   transition: background-color 250ms ease-in-out;
 }
 
-.intro-wrap .button-wrap .button:hover {
+.content .intro-wrap .button-wrap .button:hover {
   background-color: #3d3838;
   -webkit-transition: background-color 250ms ease-in-out;
   transition: background-color 250ms ease-in-out;
 }
 
-.intro-wrap .button-wrap .button::after {
+.content .intro-wrap .button-wrap .button::after {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */

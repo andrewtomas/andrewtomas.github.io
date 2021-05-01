@@ -28,18 +28,31 @@
         </header>
     </div>
 
-    <div class="intro-wrap">
-        <img src="assets/img/meh.jpg" class="my-pic" alt="Picture of me">
-        <div class="intro-text-wrap">
-            <p>Hi, I'm <b>Andrej Tomas</b>. <br>
-                I'm a <span id="text-change">software developer.</span>
-            </p>
-            <div class="button-wrap">
-                <a href="#" class="button">See my work</a>
-                <a href="#" class="button">Download my CV</a>
+    <div class="content">
+        <div class="intro-wrap">
+            <img src="assets/img/meh.jpg" class="my-pic" alt="Picture of me">
+            <div class="intro-text-wrap">
+                <p>Hi, I'm <b>Andrej Tomas</b>. <br>
+                    I'm a <span class="word" id="type-text">software developer.</span>
+                </p>
+                <div class="button-wrap">
+                    <a href="#" class="button">See my work</a>
+                    <a href="#" class="button">Download my CV</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-wrap">
+            <div class="contact">
+                <p class="contact-info">Feel free to contact me:</p> <br>
+                <a href="mailto:tomasandrej@outlook.com" target="_blank">tomasandrej@outlook.com                   
+                </a>
+                <img src="assets/img/messenger.svg" class="img-big" alt="Messenger">
+                
             </div>
         </div>
     </div>
+  
 
     <footer class="footer d-flex">
         <div class="icon-wrap">
@@ -58,6 +71,11 @@
 
 
     <canvas id="noise"></canvas>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script src="assets/app.js"></script>
     <script src="canvasnoise.js"></script>
 </body>
 

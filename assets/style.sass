@@ -104,43 +104,76 @@ body
             display: none
 
 
-.intro-wrap
+.content
     position: absolute
     top: 50%
     left: 50%
     width: 60%
     transform: translate(-50%, -50%)
-    display: flex
-    flex-direction: row
-    justify-content: start
-    align-items: center
 
-    .my-pic
-        width: 300px
-        margin-right: 5em
+    .contact-wrap
+        width: 100%
+        display: none
 
-    p
-        color: $white
-        font-weight: normal
-        font-size: 42px
-        line-height: 1.4
-        margin-bottom: 1em
+        .contact
+            text-align: center
 
-        #text-change
-            font-style: italic
+            p, a
+                color: $white
+                display: inline-block
+                font-size: 48px
 
-    .button-wrap
-        .button
-            padding: .7em  1.2em
-            background-color: $gray
-            border-radius: 18px
-            margin-right: 1em
-            font-weight: bold
-            transition: background-color 250ms ease-in-out
+            a
+                font-style: italic
 
-            &:hover
-                background-color: #3d3838
+                &:hover 
+                
+                    >.img-big
+                        opacity: .05
+                        transition: opacity 250ms ease-in-out
+
+            .img-big 
+                opacity: 0
+                z-index: -1
+                width: 200px
+                position: fixed
+                top: 150%
+                left: 50%
+                transform: translate(-50%, 0%)
+                transition: opacity 250ms ease-in-out
+
+    .intro-wrap
+        display: flex
+        flex-direction: row
+        justify-content: start
+        align-items: center
+
+        .my-pic
+            width: 300px
+            margin-right: 5em
+
+        p
+            color: $white
+            font-weight: normal
+            font-size: 42px
+            line-height: 1.4
+            margin-bottom: 1em
+
+            #type-text
+                font-style: italic
+
+        .button-wrap
+            .button
+                padding: .7em  1.2em
+                background-color: $gray
+                border-radius: 18px
+                margin-right: 1em
+                font-weight: bold
                 transition: background-color 250ms ease-in-out
 
-            &::after
-                display: none
+                &:hover
+                    background-color: #3d3838
+                    transition: background-color 250ms ease-in-out
+
+                &::after
+                    display: none
