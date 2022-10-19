@@ -1,4 +1,5 @@
-*, body {
+*,
+body {
   margin: 0;
   padding: 0;
 }
@@ -14,47 +15,47 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   position: relative;
   padding-bottom: 3px;
 }
-
+/* 
 a:hover::after {
   width: 100%;
   -webkit-transition: width 350ms ease-in-out;
   transition: width 350ms ease-in-out;
-}
+} */
 
-a::after {
+/* a::after {
   position: absolute;
   content: "";
   bottom: 0;
   left: 0;
   width: 0%;
   height: 1px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   -webkit-transition: width 350ms ease-in-out;
   transition: width 350ms ease-in-out;
-}
+} */
 
 li {
   list-style: none;
 }
 
 body {
-  background-color: #232020;
+  background-color: #121111;
   font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
@@ -67,163 +68,3 @@ body {
   opacity: 0.2;
   z-index: -1;
 }
-
-.header-wrap {
-  width: 70%;
-  position: fixed;
-  top: 2em;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: 9999;
-}
-
-.header-wrap .header {
-  width: 100%;
-  position: relative;
-}
-
-.header-wrap .header .logo {
-  font-weight: bold;
-  font-size: 24px;
-}
-
-.header-wrap .header .menu-wrap .menu .menu-item {
-  display: inline-block;
-  margin-left: 2em;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.footer {
-  position: fixed;
-  bottom: 2em;
-  left: 0;
-  width: 70%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: 9999;
-}
-
-.footer .icon-wrap .img-link {
-  margin-right: .7em;
-}
-
-.footer .icon-wrap .img-link::after {
-  display: none;
-}
-
-.footer .icon-wrap .icon {
-  width: 20px;
-}
-
-.footer .s-page-link {
-  font-size: 23px;
-  font-weight: bold;
-}
-
-.footer .s-page-link::after {
-  display: none;
-}
-
-.content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 60%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.content .contact-wrap {
-  width: 100%;
-  display: none;
-}
-
-.content .contact-wrap .contact {
-  text-align: center;
-}
-
-.content .contact-wrap .contact p, .content .contact-wrap .contact a {
-  color: #FFFFFF;
-  display: inline-block;
-  font-size: 48px;
-}
-
-.content .contact-wrap .contact a {
-  font-style: italic;
-}
-
-.content .contact-wrap .contact a:hover > .img-big {
-  opacity: .05;
-  -webkit-transition: opacity 250ms ease-in-out;
-  transition: opacity 250ms ease-in-out;
-}
-
-.content .contact-wrap .contact .img-big {
-  opacity: 0;
-  z-index: -1;
-  width: 200px;
-  position: fixed;
-  top: 150%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
-  -webkit-transition: opacity 250ms ease-in-out;
-  transition: opacity 250ms ease-in-out;
-}
-
-.content .intro-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.content .intro-wrap .my-pic {
-  width: 300px;
-  margin-right: 5em;
-}
-
-.content .intro-wrap p {
-  color: #FFFFFF;
-  font-weight: normal;
-  font-size: 42px;
-  line-height: 1.4;
-  margin-bottom: 1em;
-}
-
-.content .intro-wrap p #type-text {
-  font-style: italic;
-}
-
-.content .intro-wrap .button-wrap .button {
-  padding: .7em  1.2em;
-  background-color: #2f2a2a;
-  border-radius: 18px;
-  margin-right: 1em;
-  font-weight: bold;
-  -webkit-transition: background-color 250ms ease-in-out;
-  transition: background-color 250ms ease-in-out;
-}
-
-.content .intro-wrap .button-wrap .button:hover {
-  background-color: #3d3838;
-  -webkit-transition: background-color 250ms ease-in-out;
-  transition: background-color 250ms ease-in-out;
-}
-
-.content .intro-wrap .button-wrap .button::after {
-  display: none;
-}
-/*# sourceMappingURL=style.css.map */

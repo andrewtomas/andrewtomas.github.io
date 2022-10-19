@@ -1,54 +1,50 @@
 const noise = () => {
-let canvas, ctx;
+  let canvas, ctx;
 
-let wWidth, wHeight;
+  let wWidth, wHeight;
 
-let noiseData = [];
-let frame = 0;
+  let noiseData = [];
+  let frame = 0;
 
-let loopTimeout;
+  let loopTimeout;
 
-
-// Create Noise
-const createNoise = () => {
+  // Create Noise
+  const createNoise = () => {
     const idata = ctx.createImageData(wWidth, wHeight);
     const buffer32 = new Uint32Array(idata.data.buffer);
     const len = buffer32.length;
 
     for (let i = 0; i < len; i++) {
-        if (Math.random() < 0.3) {
-            buffer32[i] = 0xff000000;
-        }
+      if (Math.random() < 0.3) {
+        buffer32[i] = 0xff000000;
+      }
     }
 
     noiseData.push(idata);
-};
+  };
 
-
-// Play Noise
-const paintNoise = () => {
+  // Play Noise
+  const paintNoise = () => {
     if (frame === 9) {
-        frame = 0;
+      frame = 0;
     } else {
-        frame++;
+      frame++;
     }
 
     ctx.putImageData(noiseData[frame], 0, 0);
-};
+  };
 
-
-// Loop
-const loop = () => {
+  // Loop
+  const loop = () => {
     paintNoise(frame);
 
     loopTimeout = window.setTimeout(() => {
-        window.requestAnimationFrame(loop);
-    }, (1000 / 30));
-};
+      window.requestAnimationFrame(loop);
+    }, 1000 / 20);
+  };
 
-
-// Setup
-const setup = () => {
+  // Setup
+  const setup = () => {
     wWidth = window.innerWidth;
     wHeight = window.innerHeight;
 
@@ -56,34 +52,36 @@ const setup = () => {
     canvas.height = wHeight;
 
     for (let i = 0; i < 10; i++) {
-        createNoise();
+      createNoise();
     }
 
     loop();
-};
+  };
 
-
-// Reset
-let resizeThrottle;
-const reset = () => {
-    window.addEventListener('resize', () => {
+  // Reset
+  let resizeThrottle;
+  const reset = () => {
+    window.addEventListener(
+      "resize",
+      () => {
         window.clearTimeout(resizeThrottle);
 
         resizeThrottle = window.setTimeout(() => {
-            window.clearTimeout(loopTimeout);
-            setup();
+          window.clearTimeout(loopTimeout);
+          setup();
         }, 250);
-    }, false);
-};
+      },
+      false
+    );
+  };
 
-
-// Init
-const init = (() => {
-    canvas = document.getElementById('noise');
-    ctx = canvas.getContext('2d');
+  // Init
+  const init = (() => {
+    canvas = document.getElementById("noise");
+    ctx = canvas.getContext("2d");
 
     setup();
-})();
+  })();
 };
 
 noise();

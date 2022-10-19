@@ -1,60 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andrej Tomas | Software Developer</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css">
-</head>
 
-<body>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </head>
 
+  <body>
+    <div
+      class="relative w-1/3 mt-20 text-white mx-auto min-w-[500px] select-none"
+    >
+      <!-- Header -->
+      <div class="flex flex-row justify-start items-center">
+        <div
+          class="w-[100px] h-[100px] rounded-full bg-white bg-[url('/assets/img/meh.jpg')] bg-cover no-repeat bg-center"
+        ></div>
+        <div class="ml-12">
+          <div class="font-medium text-xl">Andrew Tomas</div>
+          <span class="font-thin text-sm text-gray-400">
+            Front-end developer
+          </span>
+        </div>
+      </div>
 
-    <div class="header-wrap">
-        <header class="header d-flex">
-            <a href="/" class="logo">Andrej Tomas</a>
-            <nav class="menu-wrap">
-                <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">About me</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projects</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Blog</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-
-    <div class="content">
-        <div class="intro-wrap">
-            <img src="assets/img/meh.jpg" class="my-pic" alt="Picture of me">
-            <div class="intro-text-wrap">
-                <p>Hi, I'm <b>Andrej Tomas</b>. <br>
-                    I'm a <span class="word" id="type-text">software developer.</span>
-                </p>
-                <div class="button-wrap">
-                    <a href="#" class="button">See my work</a>
-                    <a href="#" class="button">Download my CV</a>
+      <!-- Content -->
+      <div class="mt-12">
+        <table class="w-full table-fixed">
+          <tbody>
+            <tr>
+              <td
+                class="text-sm tracking-[3px] text-gray-400 font-thin align-top"
+              >
+                EXPERIENCE
+              </td>
+              <td class="pb-12">
+                <div>
+                  <div class="font-medium">Junior Front-end Developer</div>
+                  <div class="italic text-sm text-gray-400 font-thin">
+                    <span class="not-italic">@ Levi9 |</span> Nov. 2022 - pres.
+                  </div>
                 </div>
-            </div>
-        </div>
+                <div class="mt-7">
+                  <div class="font-medium">.NET Internship</div>
+                  <div class="italic text-sm text-gray-400 font-thin">
+                    <span class="not-italic">@ Levi9 |</span> Feb. 2022 - Mar.
+                    2022
+                  </div>
+                  <p class="text-sm text-gray-400 font-thin mt-3 text-left">
+                    The internship covered following subjects: Git, Database
+                    Design, SOLID principles, .NET Core & Azure
+                  </p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="text-sm tracking-[3px] text-gray-400 font-thin align-top"
+              >
+                PROJECTS
+              </td>
+              <td class="pb-12">
+                <div>
+                  <div class="font-medium">IT Galaksija</div>
+                  <div class="italic text-sm text-gray-400 font-thin">
+                    Nov. 2021 - pres.
+                  </div>
+                  <p class="text-sm text-gray-400 font-thin mt-3 text-left">
+                    A YouTube channel and a free educational platform with
+                    various IT courses.
+                  </p>
+                </div>
+              </td>
+            </tr>
+            <tr class="pt-2">
+              <td
+                class="text-sm tracking-[3px] text-gray-400 font-thin align-top"
+              >
+                EDUCATION
+              </td>
+              <td class="pb-12">
+                <div>
+                  <div class="font-medium">Bsc. Computer Science</div>
+                  <div class="italic text-sm text-gray-400 font-thin">
+                    <span class="not-italic">@ UNS PMF |</span> 2019 - 2023
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-        <div class="contact-wrap">
-            <div class="contact">
-                <p class="contact-info">Feel free to contact me:</p> <br>
-                <a href="mailto:tomasandrej@outlook.com" target="_blank">tomasandrej@outlook.com                   
-                </a>
-                <img src="assets/img/messenger.svg" class="img-big" alt="Messenger">
-                
-            </div>
+        <div>
+          <a
+            href="cv-andrejtomas.pdf"
+            download
+            class="text-xs font-thin px-4 bg-[#212121] rounded-full py-2 inline-flex flex-row items-center hover:bg-[#333333] transition-colors"
+            target="_blank"
+          >
+            <img src="assets/icons/download.svg" class="w-4" alt="" />
+            <span class="ml-2">My CV</span>
+          </a>
+          <a
+            href="mailto:andrejtomas@aol.com"
+            class="text-xs font-thin px-4 bg-[#212121] rounded-full py-2 inline-flex flex-row items-center ml-5 hover:bg-[#333333] transition-colors"
+            target="_blank"
+          >
+            <img src="assets/icons/mail.svg" class="w-4" alt="" />
+            <span class="ml-2">Contact</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/andrejtomas/"
+            class="text-xs font-thin px-4 bg-[#212121] rounded-full py-2 inline-flex flex-row items-center ml-5 hover:bg-[#333333] transition-colors"
+            target="_blank"
+          >
+            <img src="assets/icons/linkedin-logo.png" class="w-4" alt="" />
+            <span class="ml-2">LinkedIn</span>
+          </a>
+          <a
+            href="https://github.com/andrewtomas"
+            class="text-xs font-thin px-4 bg-[#212121] rounded-full py-2 inline-flex flex-row items-center ml-5 hover:bg-[#333333] transition-colors"
+            target="_blank"
+          >
+            <img src="assets/icons/github.png" class="w-4" alt="" />
+            <span class="ml-2">Github</span>
+          </a>
         </div>
+      </div>
     </div>
-  
 
-    <footer class="footer d-flex">
+    <!-- <div class="header-wrap">
+      <header class="header d-flex">
+        <a href="/" class="logo">Andrej Tomas</a>
+        <nav class="menu-wrap">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="#" class="menu-link">About me</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Projects</a>
+            </li>
+            <li class="menu-item"><a href="#" class="menu-link">Blog</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div> -->
+
+    <!-- <div class="content">
+      <div class="intro-wrap">
+        <img src="assets/img/meh.jpg" class="my-pic" alt="Picture of me" />
+        <div class="intro-text-wrap">
+          <p>
+            Hi, I'm <b>Andrej Tomas</b>. <br />
+            I'm a <span class="word" id="type-text">software developer.</span>
+          </p>
+          <div class="button-wrap">
+            <a href="#" class="button">See my work</a>
+            <a href="#" class="button">Download my CV</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-wrap">
+        <div class="contact">
+          <p class="contact-info">Feel free to contact me:</p>
+          <br />
+          <a href="mailto:tomasandrej@outlook.com" target="_blank"
+            >tomasandrej@outlook.com
+          </a>
+          <img src="assets/img/messenger.svg" class="img-big" alt="Messenger" />
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <footer class="footer d-flex">
         <div class="icon-wrap">
             <a href="https://github.com/andrewtomas" class="img-link" target="_blank">
                 <img src="assets/img/github.svg" alt="Github" class="icon">
@@ -67,16 +195,15 @@
             </a>
         </div>
         <a href="#" class="s-page-link">+</a>
-    </footer>
-
+    </footer> -->
 
     <canvas id="noise"></canvas>
     <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/app.js"></script>
     <script src="canvasnoise.js"></script>
-</body>
-
+  </body>
 </html>
